@@ -1,0 +1,49 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `calculategpa`(IN Snumber int)
+begin
+    declare score int ;
+    declare number int ;
+    declare creditv float ;
+    declare sum_credit float default 0	;
+    declare sum_score float default 0 ;
+		declare tnumber int ;
+    declare classnumber int ;
+    DECLARE done INT DEFAULT FALSE;
+    DECLARE pset CURSOR FOR (SELECT T_number,Class_number from s_classinfo where S_number=Snumber); /*声明游标*/
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+	open pset;
+    fetch pset into tnumber,classnumber;
+    myloop:Loop
+		 if done then
+            leave myloop;
+         end if;
+         select S_grade into score from s_classinfo where T_number=tnumber and Class_number=classnumber and S_number=Snumber;
+         select Credit into creditv from coursetable where T_number=tnumber and Class_number=classnumber;
+         if score>=0 and score<60 then
+                set sum_credit:=sum_credit+creditv*0;
+             elseif score>=60 and score<65 then
+                set sum_credit:=sum_credit+creditv*1;
+             elseif score>=65 and score<70 then
+                 set sum_credit:=sum_credit+creditv*1.5;
+             elseif score>=70 and score<75 then
+                 set sum_credit:=sum_credit+creditv*2;
+             elseif score>=75 and score<80 then
+                 set sum_credit:=sum_credit+creditv*2.5;
+             elseif score>=80 and score<85 then
+                 set sum_credit:=sum_credit+creditv*3.0;
+             elseif score>=85 and score<90 then
+                 set sum_credit:=sum_credit+creditv*3.5;
+             elseif score>=90 and score<95 then
+                 set sum_credit:=sum_credit+creditv*4.0;
+             elseif score>=95 and score<100 then
+                 set sum_credit:=sum_credit+creditv*4.5;
+             else
+                 set sum_credit:=sum_credit+creditv*5;
+         end if ;
+				  select sum_score;
+         set sum_score:=sum_score+creditv;
+				 select sum_score;
+         fetch pset into tnumber,classnumber;
+    end loop myloop;
+    update sscholasticin set S_gpa:=sum_credit/sum_score where sscholasticin.S_number=Snumber;
+    close pset;
+end

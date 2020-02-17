@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ManagerSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagerSystemDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagerSystemView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginGUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="admin_login.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sbasicinformation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="student_login.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="teacher_login.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Admin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AddAdmin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteAdmin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalUser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNormalUser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteNormalGUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StudentBasic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicStuAdd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Requery.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SBasic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EidtStudent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StudentStudy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sscholasticin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StudyModify.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TeacherAdd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TeacherInformation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="teacherinfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TeacherADDGUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TeacherModify.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CchangeClass.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="coursetable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s_classinfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StudentChangeADD.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TeacherManagerClass.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CclassAdd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Grade.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachCalculate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NoramlUser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ManagerSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagerSystemDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagerSystemView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginGUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="admin_login.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sbasicinformation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="student_login.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="teacher_login.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Admin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AddAdmin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteAdmin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalUser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNormalUser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteNormalGUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StudentBasic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicStuAdd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Requery.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SBasic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EidtStudent.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StudentStudy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sscholasticin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StudyModify.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TeacherAdd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TeacherInformation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="teacherinfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TeacherADDGUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TeacherModify.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CchangeClass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="coursetable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s_classinfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StudentChangeADD.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TeacherManagerClass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CclassAdd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Grade.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachCalculate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NoramlUser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ManagerSystem.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ManagerSystem.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ManagerSystemDoc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ManagerSystem.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

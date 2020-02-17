@@ -1,0 +1,96 @@
+create definer = root@localhost trigger g_afterdelete_classinfo
+    after DELETE
+    on s_classinfo
+    for each row
+begin
+      update coursetable set Class_count=Class_count-1 where Class_number=OLD.Class_number and T_number=OLD.T_number;
+    end;
+////////////////////////////////////////////////////////////////
+create definer = root@localhost trigger g_afterinsert_classinfo
+    after INSERT
+    on s_classinfo
+    for each row
+begin
+      update coursetable set Class_count=Class_count+1 where Class_number=new.Class_number and T_number=NEW.T_number;
+    end;
+////////////////////////////////////////////////////////////////
+create definer = root@localhost trigger g_afteredit_student
+    after UPDATE
+    on sbasicinformation
+    for each row
+begin
+        insert into student_login(s_number, s_password) VALUES (new.S_number,new.S_number);
+    end;
+///////////////////////////////////////////////////////////////
+create definer = root@localhost trigger g_afterinsert_student
+    after INSERT
+    on sbasicinformation
+    for each row
+begin
+        insert into student_login(s_number, s_password) VALUES (new.S_number,new.S_number);
+    end;
+
+////////////////////////////////////////////////////////////////
+create definer = root@localhost trigger g_afterinsert_studentbasic
+    after INSERT
+    on sbasicinformation
+    for each row
+begin
+        insert into sscholasticin(S_number)values (new.S_number);
+    end;
+
+////////////////////////////////////////////////////////////
+create definer = root@localhost trigger g_beforedelete_student
+    before DELETE
+    on sbasicinformation
+    for each row
+begin
+    delete from student_login where student_login.S_number=old.S_number;
+    delete from sscholasticin where sscholasticin.S_number=old.S_number;
+    delete from s_classinfo where s_classinfo.S_number=old.S_number;
+end;
+
+/////////////////////////////////////////////////////////////
+create definer = root@localhost trigger g_beforeedit_student
+    before UPDATE
+    on sbasicinformation
+    for each row
+begin
+        delete from student_login where student_login.S_number=OLD.S_number;
+    end;
+/////////////////////////////////////////////////////////////
+create definer = root@localhost trigger g_afterinsert_teacher
+    after INSERT
+    on teacherinfo
+    for each row
+begin
+        insert into teacher_login(T_number, T_password) VALUES (new.T_number,new.T_number);
+    end;
+//////////////////////////////////////////////////////////////
+create definer = root@localhost trigger g_aftermodify_teacherinfo
+    after UPDATE
+    on teacherinfo
+    for each row
+begin
+      insert into teacher_login(t_number, t_password) values (NEW.T_number,NEW.T_number);
+    end;
+
+///////////////////////////////////////////////////////////
+create definer = root@localhost trigger g_beforedelete_teacher
+    before DELETE
+    on teacherinfo
+    for each row
+begin
+        delete from teacher_login where teacher_login.T_number=OLD.T_number;
+        delete from s_classinfo where T_number=old.T_number;
+        delete from coursetable where T_number=old.T_number;
+end;
+///////////////////////////////////////////////////////////////////
+create definer = root@localhost trigger g_beforemodify_teacherinfo
+    before UPDATE
+    on teacherinfo
+    for each row
+begin
+       delete  from teacher_login where T_number=OLD.T_number;
+    end;
+/////////////////////////////////////////////////////////////////

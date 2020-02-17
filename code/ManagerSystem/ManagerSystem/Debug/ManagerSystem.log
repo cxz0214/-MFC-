@@ -1,0 +1,55 @@
+﻿生成启动时间为 2019/7/8 7:43:38。
+     1>项目“D:\C++LearnFiles\ManagerSystem\ManagerSystem\ManagerSystem.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\vs2013旗舰版\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ManagerSystem.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt TeachCalculate.cpp
+         TeachCalculate.cpp
+     1>d:\c++learnfiles\managersystem\managersystem\teachcalculate.cpp(110): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\c++learnfiles\managersystem\managersystem\teachcalculate.cpp(118): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\c++learnfiles\managersystem\managersystem\teachcalculate.cpp(126): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\c++learnfiles\managersystem\managersystem\teachcalculate.cpp(134): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+       Link:
+         D:\vs2013旗舰版\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\C++LearnFiles\ManagerSystem\Debug\ManagerSystem.exe" /INCREMENTAL /NOLOGO odbc32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\vs2013旗舰版\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\C++LearnFiles\ManagerSystem\Debug\ManagerSystem.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\C++LearnFiles\ManagerSystem\Debug\ManagerSystem.lib" /MACHINE:X86 Debug\ManagerSystem.res
+         Debug\AddAdmin.obj
+         Debug\AddNormalUser.obj
+         Debug\Admin.obj
+         Debug\admin_login.obj
+         Debug\BasicStuAdd.obj
+         Debug\CchangeClass.obj
+         Debug\CclassAdd.obj
+         Debug\coursetable.obj
+         Debug\DeleteAdmin.obj
+         Debug\DeleteNormalGUI.obj
+         Debug\EidtStudent.obj
+         Debug\Grade.obj
+         Debug\LoginGUI.obj
+         Debug\MainFrm.obj
+         Debug\ManagerSystem.obj
+         Debug\ManagerSystemDoc.obj
+         Debug\ManagerSystemView.obj
+         Debug\NoramlUser.obj
+         Debug\NormalUser.obj
+         Debug\Requery.obj
+         Debug\SBasic.obj
+         Debug\sbasicinformation.obj
+         Debug\sscholasticin.obj
+         Debug\stdafx.obj
+         Debug\StudentBasic.obj
+         Debug\StudentChangeADD.obj
+         Debug\StudentStudy.obj
+         Debug\student_login.obj
+         Debug\StudyModify.obj
+         Debug\s_classinfo.obj
+         Debug\TeachCalculate.obj
+         Debug\TeacherAdd.obj
+         Debug\TeacherADDGUI.obj
+         Debug\teacherinfo.obj
+         Debug\TeacherInformation.obj
+         Debug\TeacherManagerClass.obj
+         Debug\TeacherModify.obj
+         Debug\teacher_login.obj
+         ManagerSystem.vcxproj -> D:\C++LearnFiles\ManagerSystem\Debug\ManagerSystem.exe
+     1>已完成生成项目“D:\C++LearnFiles\ManagerSystem\ManagerSystem\ManagerSystem.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.73

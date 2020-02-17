@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{30935406-9F96-4D7E-9FD9-E72E8F563DDF}</ProjectGuid>
+    <RootNamespace>ManagerSystem</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>odbc32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>odbc32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddAdmin.h" />
+    <ClInclude Include="AddNormalUser.h" />
+    <ClInclude Include="Admin.h" />
+    <ClInclude Include="admin_login.h" />
+    <ClInclude Include="BasicStuAdd.h" />
+    <ClInclude Include="CchangeClass.h" />
+    <ClInclude Include="CclassAdd.h" />
+    <ClInclude Include="coursetable.h" />
+    <ClInclude Include="DeleteAdmin.h" />
+    <ClInclude Include="DeleteNormalGUI.h" />
+    <ClInclude Include="EidtStudent.h" />
+    <ClInclude Include="Grade.h" />
+    <ClInclude Include="LoginGUI.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="ManagerSystem.h" />
+    <ClInclude Include="ManagerSystemDoc.h" />
+    <ClInclude Include="ManagerSystemView.h" />
+    <ClInclude Include="NoramlUser.h" />
+    <ClInclude Include="NormalUser.h" />
+    <ClInclude Include="Requery.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SBasic.h" />
+    <ClInclude Include="sbasicinformation.h" />
+    <ClInclude Include="sscholasticin.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StudentBasic.h" />
+    <ClInclude Include="StudentChangeADD.h" />
+    <ClInclude Include="StudentStudy.h" />
+    <ClInclude Include="student_login.h" />
+    <ClInclude Include="StudyModify.h" />
+    <ClInclude Include="s_classinfo.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TeachCalculate.h" />
+    <ClInclude Include="TeacherAdd.h" />
+    <ClInclude Include="TeacherADDGUI.h" />
+    <ClInclude Include="teacherinfo.h" />
+    <ClInclude Include="TeacherInformation.h" />
+    <ClInclude Include="TeacherManagerClass.h" />
+    <ClInclude Include="TeacherModify.h" />
+    <ClInclude Include="teacher_login.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddAdmin.cpp" />
+    <ClCompile Include="AddNormalUser.cpp" />
+    <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="admin_login.cpp" />
+    <ClCompile Include="BasicStuAdd.cpp" />
+    <ClCompile Include="CchangeClass.cpp" />
+    <ClCompile Include="CclassAdd.cpp" />
+    <ClCompile Include="coursetable.cpp" />
+    <ClCompile Include="DeleteAdmin.cpp" />
+    <ClCompile Include="DeleteNormalGUI.cpp" />
+    <ClCompile Include="EidtStudent.cpp" />
+    <ClCompile Include="Grade.cpp" />
+    <ClCompile Include="LoginGUI.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="ManagerSystem.cpp" />
+    <ClCompile Include="ManagerSystemDoc.cpp" />
+    <ClCompile Include="ManagerSystemView.cpp" />
+    <ClCompile Include="NoramlUser.cpp" />
+    <ClCompile Include="NormalUser.cpp" />
+    <ClCompile Include="Requery.cpp" />
+    <ClCompile Include="SBasic.cpp" />
+    <ClCompile Include="sbasicinformation.cpp" />
+    <ClCompile Include="sscholasticin.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StudentBasic.cpp" />
+    <ClCompile Include="StudentChangeADD.cpp" />
+    <ClCompile Include="StudentStudy.cpp" />
+    <ClCompile Include="student_login.cpp" />
+    <ClCompile Include="StudyModify.cpp" />
+    <ClCompile Include="s_classinfo.cpp" />
+    <ClCompile Include="TeachCalculate.cpp" />
+    <ClCompile Include="TeacherAdd.cpp" />
+    <ClCompile Include="TeacherADDGUI.cpp" />
+    <ClCompile Include="teacherinfo.cpp" />
+    <ClCompile Include="TeacherInformation.cpp" />
+    <ClCompile Include="TeacherManagerClass.cpp" />
+    <ClCompile Include="TeacherModify.cpp" />
+    <ClCompile Include="teacher_login.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ManagerSystem.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ManagerSystem.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ManagerSystem.ico" />
+    <Image Include="res\ManagerSystemDoc.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ManagerSystem.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

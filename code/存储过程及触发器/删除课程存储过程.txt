@@ -1,0 +1,5 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteclass`(in classnumber int)
+begin
+        delete from s_classinfo where Class_number=classnumber;
+        delete from coursetable where Class_number=classnumber;
+   end

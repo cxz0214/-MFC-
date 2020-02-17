@@ -1,0 +1,19 @@
+INSERT INTO `teacherinfo` VALUES ('张志强', 101001, '男', '计算机学院');
+INSERT INTO `teacherinfo` VALUES ('陈子慧', 102254, '女', '计算机学院');
+INSERT INTO `teacherinfo` VALUES ('诸葛红', 102341, '女', '计算机学院');
+INSERT INTO `teacherinfo` VALUES ('赵志刚', 120032, '男', '计算机学院');
+INSERT INTO `teacherinfo` VALUES ('李亚丽', 120033, '女', '计算机学院');
+INSERT INTO `teacherinfo` VALUES ('刘洋', 200011, '男', '机械与电子信息学院');
+INSERT INTO `teacherinfo` VALUES ('张志刚', 200013, '男', '计算机学院');
+INSERT INTO `teacherinfo` VALUES ('马志宏', 200221, '男', '机械与电子信息学院');
+INSERT INTO `teacherinfo` VALUES ('刘杨志', 201003, '男', '机械与电子信息学院');
+INSERT INTO `teacherinfo` VALUES ('张维龙', 202012, '男', '计算机学院');
+INSERT INTO `teacherinfo` VALUES ('吴志平', 237843, '男', '外国语学院');
+INSERT INTO `teacherinfo` VALUES ('吴刚', 400111, '男', '马克思主义学院');
+INSERT INTO `teacherinfo` VALUES ('赵志鹏', 400112, '男', '马克思主义学院');
+INSERT INTO `teacherinfo` VALUES ('吴契合', 400442, '男', '马克思主义学院');
+INSERT INTO `teacherinfo` VALUES ('朱颜', 500001, '女', '外国语学院');
+INSERT INTO `teacherinfo` VALUES ('燕美华', 503331, '女', '外国语学院');
+INSERT INTO `teacherinfo` VALUES ('赵丽', 510001, '女', '外国语学院');
+INSERT INTO `teacherinfo` VALUES ('郭孟伟', 982111, '男', '外国语学院');
+
